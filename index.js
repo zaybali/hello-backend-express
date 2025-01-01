@@ -4,6 +4,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   console.log("request received", req.url);
+  res.send("Hello World");
 });
 
 app.listen(3001, () => {
