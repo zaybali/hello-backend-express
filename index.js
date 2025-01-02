@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
+app.post("/file", (req, res) => {
+  res.send("Hello World from POST");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
